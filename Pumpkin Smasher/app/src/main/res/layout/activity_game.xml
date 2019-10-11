@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    android:onClick="hit_click"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:alpha=".3"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dark_pumpkin" />
+
+    <TextView
+        android:id="@+id/score_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:  0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FF5A00"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pumpkin1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin16"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin16"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin14"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin14"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin15"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin14"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin15"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin14"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin4"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin14"
+        app:layout_constraintTop_toTopOf="@+id/pumpkin4"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin4"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin14"
+        app:layout_constraintTop_toTopOf="@+id/pumpkin4"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin15"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin4"
+        app:layout_constraintTop_toTopOf="@+id/pumpkin4"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin15"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin4"
+        app:layout_constraintTop_toTopOf="@+id/pumpkin4"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin15"
+        app:layout_constraintStart_toStartOf="@+id/pumpkin13"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin13"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin15"
+        app:layout_constraintStart_toStartOf="@+id/pumpkin13"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin13"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin13"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin16"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin13"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin16"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpkin2"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin16"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin2"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpkin2"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin16"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin2"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpkin2"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin2"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpkin2"
+        app:layout_constraintEnd_toStartOf="@+id/pumpkin2"
+        app:layout_constraintStart_toEndOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin14"
+        app:layout_constraintEnd_toEndOf="@+id/pumpkin3"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin3"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin14"
+        app:layout_constraintEnd_toEndOf="@+id/pumpkin3"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin3"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin3"
+        app:layout_constraintEnd_toEndOf="@+id/pumpkin3"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin3"
+        app:layout_constraintEnd_toEndOf="@+id/pumpkin3"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin1"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin15"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin16"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pumpkin15"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/pumpkin16"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin14"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot14"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin15"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot15"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:srcCompat="@drawable/boot" />
+
+    <ImageView
+        android:id="@+id/pumpkin16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:srcCompat="@drawable/pumpkin" />
+
+    <ImageView
+        android:id="@+id/boot16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:srcCompat="@drawable/boot" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

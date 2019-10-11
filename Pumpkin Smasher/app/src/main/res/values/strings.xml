@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pumpkin Smasher</string>
+    <string name="Instructions">Tap the screen when the boot is over the pumpkin.
+        If you tap when the boot is not over the pumpkin you lose.
+        If you miss an opportunity to smash the pumpkin you also lose.
+        Your goal is to try and achieve the highest score possible.</string>
+</resources>
