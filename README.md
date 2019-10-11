@@ -1,7 +1,7 @@
 # Pumpkin Smasher
  A game designed in Android Studio
 
-***Open the package in Android Studio. Click run after connecting your android phone. The app will be installed to your phone. You may disconnect your phone after installation.
+***Open the package in Android Studio. Click run after connecting your android phone. The app will be installed to your phone. You may disconnect your phone after installation.***
 
 Instructions: Tap the screen when the boot is over the pumpkin.
 
